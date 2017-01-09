@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CharlesASPNetCoreNoBoiler.Data;
 using CharlesASPNetCoreNoBoiler.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CharlesASPNetCoreNoBoiler.Controllers
 {
@@ -138,6 +138,7 @@ namespace CharlesASPNetCoreNoBoiler.Controllers
         }
 
         // GET: Movies/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -155,7 +156,7 @@ namespace CharlesASPNetCoreNoBoiler.Controllers
         }
 
         // POST: Movies/Delete/5
-        [HttpPost,ValidateAntiForgeryToken ]
+        [HttpPost,ValidateAntiForgeryToken, Authorize ]
         public async Task<IActionResult> Delete(int id, bool notUsed)
         {
             var movie = await _context.Movie.SingleOrDefaultAsync(m => m.id == id);
