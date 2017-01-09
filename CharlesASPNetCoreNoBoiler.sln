@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CDFD541F-2A30-4BD9-8938-C1FD32118FC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2578A395-DAA9-4798-87F3-889705D91C9F}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CharlesASPNetCoreNoBoiler", "src\CharlesASPNetCoreNoBoiler\CharlesASPNetCoreNoBoiler.xproj", "{172DBEC7-3FFF-4C6C-8168-7CE74B517266}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{172DBEC7-3FFF-4C6C-8168-7CE74B517266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{172DBEC7-3FFF-4C6C-8168-7CE74B517266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{172DBEC7-3FFF-4C6C-8168-7CE74B517266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{172DBEC7-3FFF-4C6C-8168-7CE74B517266}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{172DBEC7-3FFF-4C6C-8168-7CE74B517266} = {CDFD541F-2A30-4BD9-8938-C1FD32118FC9}
+	EndGlobalSection
+EndGlobal
